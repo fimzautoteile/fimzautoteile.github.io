@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Autoteile.css">
+    <title>AUTOTEILE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedorCargando" class="contenedor-cargando" hidden><img class="imagen-cargando" src="imagenes/comunes/circles.svg" /><div class="texto-cargando">Espere...</div></div>
+    <header>
+        <div class="container">
+          <p class="logo">AUTOTEILE</p>
+          <nav>
+              <a class="bg_slider" href="index.html">Home</a>
+              <a class="bg_slider" href="tienda.html">Tienda</a>
+          </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <h1><span id="mensaje"></span></h1>
+        <a href="consulta.html"><button>Envianos un correo de consulta</button></a>
+        </form>
+
+    </section>
+
+    <section id="somos-proya" class="fondo-banner">
+        <div class="grid">
+            <div class="tarjeta">
+                <div class="contenedor-img">
+                    <img src="imagenes/productos/BOMBA-EMBREAGUE.png" alt="" class="producto-imagen">
+                </div>
+                
+                <div class="producto-contenido">
+                    <h3>Bomba De Embreague</h3>
+                    <h2 class="precio">100 Bs.</h2>
+                    <a onclick="comprar(100, 'BOMBA DE EMBREAGUE')" class="comprar">Comprar</a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="contenedor-img">
+                    <img src="imagenes/productos/CILINDO-MAESTRO-FRENO.png" alt="" class="producto-imagen">
+                </div>
+                
+                <div class="producto-contenido">
+                    <h3>Cilindro Maestro De Freno</h3>
+                    <h2 class="precio">500 Bs.</h2>
+                    <a onclick="comprar(500, 'CILINDO MAESTRO DE FRENO')" class="comprar">Comprar</a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="contenedor-img">
+                    <img src="imagenes/productos/CILINDRO-RUEDA-FRENO.png" alt="" class="producto-imagen">
+                </div>
+                
+                <div class="producto-contenido">
+                    <h3>Cilindro Rueda De Freno</h3>
+                    <h2 class="precio">400 Bs.</h2>
+                    <a onclick="comprar(400, 'CILINDRO RUEDA DE FRENO')" class="comprar">Comprar</a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="contenedor-img">
+                    <img src="imagenes/productos/FILTRO-DE-ACEITE.png" alt="" class="producto-imagen">
+                </div>
+                
+                <div class="producto-contenido">
+                    <h3>Filtro De Aceite</h3>
+                    <h2 class="precio">200 Bs.</h2>
+                    <a onclick="comprar(200, 'FILTRO DE ACEITE')" class="comprar">Comprar</a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="contenedor-img">
+                    <img src="imagenes/productos/ROTOR-ALTERNADOR.png" alt="" class="producto-imagen">
+                </div>
+                
+                <div class="producto-contenido">
+                    <h3>Rotor Alternador</h3>
+                    <h2 class="precio">300 Bs.</h2>
+                    <a onclick="comprar(300, 'ROTOR ALTERNADOR')" class="comprar">Comprar</a>
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="contenedor-img">
+                    <img src="imagenes/fondos/fondo10.jpg" alt="" class="producto-imagen">
+                </div>
+                
+                <div class="producto-contenido">
+                    <h3>Combo Navideño AUTOTEILE</h3>
+                    <h2 class="precio">599 Bs.</h2>
+                    <a onclick="comprar(599, 'Producto Prueba')" class="comprar">Comprar</a>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>No esta el producto que buscas en nuestra lista??? <br> descarga nuestros catalogos</h2>
+        <a class="catalogo-descargar" href="catalogofilgo.pdf" download="catalogo1.pdf">Catalogo 1</a>
+        <a class="catalogo-descargar" href="catalogosaymi.pdf" download="catalogo2.pdf">Catalogo 2</a>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+        <p>&copy; Autoteile F.I.M.Z</p>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

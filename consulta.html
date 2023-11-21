@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Autoteile.css">
+    <title>AUTOTEILE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedorCargando" class="contenedor-cargando" hidden><img class="imagen-cargando" src="imagenes/comunes/circles.svg" /><div class="texto-cargando">Espere...</div></div>
+    <header>
+        <div class="container">
+          <p class="logo">AUTOTEILE</p>
+          <nav>
+            <a class="bg_slider" href="index.html">Home</a>
+            <a class="bg_slider" href="tienda.html">Tienda</a>
+          </nav>
+        </div>
+    </header>
+    <section id="asistencia">
+        <h1>Asistencia tecnica</h1>
+    </section>
+    <section id="somos-proya" class="fondo-banner2">
+        <div class="container">
+            
+            <div class="texto fondo-difuminado">
+                <h3 class="formulario-titulo">Registra tu consulta</h3>
+                <form class="formulario" onsubmit="return false;">
+                    
+                    <input class="input" id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                    <label class="label" for="nombre">Nombre</label>
+                    
+                    <input class="input" id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+                    <label class="label" for="apellido">Apellido</label>
+                    
+                    <input class="input" id="correo" name="correo" type="email" placeholder="Correo" required>
+                    <label class="label" for="correo">Correo</label>
+                    <label>Fecha de visita</label><br>
+                    <input class="input" id="fecha" type="date" name="fecha"><br>
+                    <div style="text-align: center;"><button class="boton-formulario" onclick="enviarCorreo()">Registrar visita</button></div>
+                </form>
+            </div>
+            <div class="img-container2"></div>
+            
+         </div>
+    </section>
+
+
+    <section id="final">
+        <h2>Gracias por elegirnos.</h2>
+    </section>
+
+    <footer>
+        <div class="container">
+        <p>&copy; Autoteile F.I.M.Z</p>
+        </div>
+    </footer>
+    <script src="js/consulta.js"></script>
+</body>
+</html>
