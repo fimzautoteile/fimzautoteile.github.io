@@ -1,0 +1,718 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lilita One', sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(100, 32, 163);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color: blueviolet;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bolder;
+    line-height: 3em;
+    padding: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.bg_slider {
+    color: blueviolet;
+    background-image: linear-gradient(90deg,
+        #f5f5f5 0%,
+        #f5f5f5 50%,
+        blueviolet 50%,
+        blueviolet 100%);
+    background-size: 200%;
+    transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+      color .2s linear;
+    transition-delay: 0.0s, 0.15s;
+}
+
+.bg_slider:hover {
+    color: #FFF;
+    cursor: pointer;
+    background-position: -100% 100%;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/imagenes/fondos/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#asistencia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/imagenes/fondos/asistencia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .container{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/imagenes/productos/FILTRO-DE-ACEITE.png");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/imagenes/fondos/pastillas.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/imagenes/fondos/refrigerantes.jpg");
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+    background-color: #8a2be287;
+}
+#caracteristicas li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 5vw;
+}
+
+#final button{
+    font-size: 1.75em;
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+}
+    
+@media (min-width:720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: url(/imagenes/fondos/fondo4.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        
+    }
+
+    #somos-proya .img-container2{
+        background-image: url(/imagenes/fondos/Mecanico.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 50px;
+        background-color: rgb(50, 50, 50);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #caracteristicas{
+        background-image: url("/imagenes/banners/banner-1.jpg");
+        background-repeat: no-repeat;
+        padding-top: 110px;
+        padding-bottom: 80px;
+        background-color: #0e0e0f;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .fondo-banner{
+        background-image: url("/imagenes/banners/banner-2.jpg");
+        background-repeat: no-repeat;
+        padding-top: 110px;
+        padding-bottom: 80px;
+        background-color: #0e0e0f;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .fondo-banner2{
+        background-image: url("/imagenes/banners/banner-3.jpg");
+        background-repeat: no-repeat;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #0e0e0f;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .fondo-difuminado{
+        background-color: #f5f5f585;
+        backdrop-filter: invert(80%);
+    }
+
+    #caracteristicas.container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: -600px;
+    }
+
+    #final h2{
+    font-size: 5em;
+    }
+
+    #final bottom{
+    font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+    
+@media (max-width: 719px){
+    .titulo{
+        width: 100%;
+    }
+    #caracteristicas .container{
+        text-align: center;
+        padding: 200px 12px;
+        background-color: #8a2be287;
+    }
+    #caracteristicas{
+        background-image: url("/imagenes/banners/banner-1.jpg");
+        background-repeat: no-repeat;
+        padding-top: 110px;
+        padding-bottom: 80px;
+        background-color: #0e0e0f;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .fondo-banner{
+        background-image: url("/imagenes/banners/banner-2.jpg");
+        background-repeat: no-repeat;
+        padding-top: 110px;
+        padding-bottom: 80px;
+        background-color: #0e0e0f;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .fondo-banner2{
+        background-image: url("/imagenes/banners/banner-3.jpg");
+        background-repeat: no-repeat;
+        padding-top: 110px;
+        padding-bottom: 80px;
+        background-color: #0e0e0f;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .fondo-difuminado{
+        background-color: #f5f5f585;
+        backdrop-filter: invert(80%);
+    }
+
+    .img-container2{
+        background-image: url(/imagenes/fondos/Mecanico.jpg);
+        background-size: cover;
+        height: 500px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    #somos-proya .container{
+        text-align: left;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 50px;
+    padding: 30px;
+}
+
+.tarjeta {
+    position: relative;
+    width: 320px;
+    height: 520px;
+    background: #191919;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    width: 100%;
+    height: 100%;
+    background: blueviolet;
+    transition: 0.5s;
+}
+
+.tarjeta:hover::before {
+    top: -100%;
+}
+
+.tarjeta::after {
+    content: "AUTOTEILE";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.tarjeta .contenedor-img {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.tarjeta .producto-contenido {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.tarjeta .producto-contenido h3 {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tarjeta .producto-contenido .precio {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.tarjeta .producto-contenido .comprar {
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    background: blueviolet;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.tarjeta:hover .producto-contenido .comprar {
+    top: 0;
+    opacity: 1;
+    cursor:pointer;
+}
+
+.producto-imagen {
+    height: 240px;
+    width: 80%;
+    transition: 0.5s;
+}
+
+.producto-imagen:hover {
+    height: 280px;
+    width: 100%;
+}
+
+.contenedor-cargando{
+    background-color: rgb(31 10 51 / 53%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 99999;
+}
+
+.imagen-cargando{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto-cargando{
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+}
+
+.catalogo-descargar{
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.catalogo-descargar:hover{
+    color: blueviolet;
+    font-size: 50px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 25%;
+    margin-left: -80px;
+    font-size: 15px;
+    height: auto;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+.boton-formulario{
+    margin-top: 50px;
+}
+
+.formulario{
+    width: 100%;
+    padding: 50px;
+}
+
+.formulario-titulo{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.input {
+    width: 90%;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 0.625rem auto;
+    transition: all 250ms;
+    color: blueviolet;
+    font-size: 1rem;
+}
+
+.input:focus {
+    outline: none;
+    border-top-color: rgba(0,0,0,0.1);
+}
+
+.input:focus + .label, .input:not(:placeholder-shown) + .label {
+    transform: translateY(-4.50rem) scale(1);
+    color: blueviolet;
+}
+
+.input::placeholder {
+    display: none;
+    color: transparent;
+    user-select: none;
+}
+
+.input:not(:placeholder-shown) {
+    border-top-color: rgba(137, 43, 226, 0.623);
+    border-top-width: 5px;
+}
+
+.label {
+    font-size: 1rem;
+    color: grey;
+    display: block;
+    transform: translate(1.25rem,-2.5rem);
+    transform-origin: 0 0;
+    transition: all 500ms;
+    user-select: none;
+    pointer-events: none; 
+}
+
